@@ -4,6 +4,6 @@ node('bbone') {
     }
 
     stage('Test') {
-        sh 'build/ardtest.sh'
+        sh 'build/ardverify.sh'
     }
 }
