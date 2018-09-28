@@ -2,7 +2,7 @@
 
 ARDCMD=/opt/arduino/arduino
 
-BTEST=blink/blink.ino
-
-echo "Starting verify test cycle."
-${ARDCMD} --verify ${BTEST}
+for INO in $(find . -iname "*.ino"); do
+    echo "Starting verify test cycle for ${INO}."
+    ${ARDCMD} --verify ${INO}
+done
