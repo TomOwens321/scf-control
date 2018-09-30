@@ -7,6 +7,9 @@ void setup() {
     Serial.begin(115200);
     Serial.println(DEVTYPE);
     Serial.println(SERIALNUM);
+
+    BasicController bc = BasicController(0, 12);
+    Serial.println(bc.getOutPin());
 }
 
 void loop() {
