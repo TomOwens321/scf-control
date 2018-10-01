@@ -9,6 +9,7 @@ node('bbone') {
     }
 
     stage('Test') {
+        sayHello('TomO')
         sh 'build/ardverify.sh'
     }
 }
