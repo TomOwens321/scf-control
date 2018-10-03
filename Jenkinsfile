@@ -1,6 +1,6 @@
 library identifier: 'sharedlibs@master', retriever: modernSCM(
     [$class: 'GitSCMSource',
-     remote: 'https://github.com/TomOwens321/sharedlibs.git']
+     remote: 'git@github.com:TomOwens321/sharedlibs.git']
 )
 
 node('bbone') {
