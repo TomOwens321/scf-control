@@ -8,12 +8,12 @@ import com.towens.*
 
 node('bbone') {
     stage('Checkout') {
-        cf = new checkoutFuncs()
+        cf = new com.towens.checkoutFuncs()
         cf.checkoutWithRetries()
     }
 
     stage('Test') {
-        sh = new sayHello()
+        sh = new com.towens.sayHello()
         sh.sayHello('TomO')
         sh 'build/ardverify.sh'
     }
