@@ -1,8 +1,4 @@
-library identifier: 'sharedlibs@master', retriever: modernSCM(
-    [$class: 'GitSCMSource',
-     remote: 'https://github.com/TomOwens321/sharedlibs.git',
-     credentialsId: 'me_at_github']
-)
+@Library('shared-libs@master')_
 
 node('bbone') {
     stage('Checkout') {
