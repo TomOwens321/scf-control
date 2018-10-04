@@ -4,7 +4,7 @@ library identifier: 'sharedlibs@development', retriever: modernSCM(
      remote: 'https://github.com/TomOwens321/sharedlibs.git'])
 // import com.towens.*
 
-@Library('sharedlibs@development')
+@Library('sharedlibs')
 import com.towens.*
 
 node('bbone') {
