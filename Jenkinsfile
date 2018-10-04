@@ -1,10 +1,11 @@
-@Library('shared-libs@development')
-import com.towens.*
 
-// library identifier: 'sharedlibs@development', retriever: modernSCM(
-//     [$class: 'GitSCMSource',
-//      remote: 'https://github.com/TomOwens321/sharedlibs.git'])
+library identifier: 'sharedlibs@development', retriever: modernSCM(
+    [$class: 'GitSCMSource',
+     remote: 'https://github.com/TomOwens321/sharedlibs.git'])
 // import com.towens.*
+
+@Library('sharedlibs@development')
+import com.towens.*
 
 node('bbone') {
     stage('Checkout') {
