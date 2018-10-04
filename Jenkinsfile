@@ -3,7 +3,8 @@ import com.towens.*
 
 node('bbone') {
     stage('Checkout') {
-        checkout scm
+        cf = new checkoutFuncs()
+        cf.checkoutWithRetries()
     }
 
     stage('Test') {
