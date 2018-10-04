@@ -4,6 +4,7 @@
 library( identifier: 'sharedlibs@development', retriever: modernSCM(
     [$class: 'GitSCMSource',
      remote: 'https://github.com/TomOwens321/sharedlibs.git']))_
+import com.towens.*
 
 node('bbone') {
     stage('Checkout') {
