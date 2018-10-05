@@ -1,7 +1,8 @@
 
 library identifier: 'sharedlibs@development', retriever: modernSCM(
     [$class: 'GitSCMSource',
-     remote: 'https://github.com/TomOwens321/sharedlibs.git'])
+     remote: 'git@github.com:TomOwens321/sharedlibs.git',
+     credentialsId: 'me_at_github'])
 // import com.towens.*
 
 // @Library('sharedlibs')
